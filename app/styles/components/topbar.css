@@ -1,0 +1,55 @@
+#topbar {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.topbar__items {
+    width: 70%;
+    display: flex;
+}
+
+/* Style for search bar */
+.topbar__items__search {
+    width: 58%;
+    background: white;
+    padding: 10px;
+}
+
+.topbar__items__search input {
+    border: none;
+}
+
+.topbar__items__search svg {
+    color: black;
+}
+
+/* Style for button upload */
+.topbar__items__upload {
+    display: flex;
+}
+
+/* Style for user */
+.topbar__items__user {
+    margin-right: 20px;
+    position: relative;
+}
+
+.topbar__items__user .button {
+    padding: 15px 20px
+}
+
+.topbar__items__user__bullet {
+    background: white;
+    color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    position: absolute;
+    top: -5px;
+    right: -25px;
+    font-weight: bold;
+}

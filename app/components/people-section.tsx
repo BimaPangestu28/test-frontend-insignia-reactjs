@@ -57,7 +57,7 @@ export default function PeopleSection() {
             </div>
           ))}
 
-          <div className="section__content border-solid border-2 border-color-base justify-center items-center p-3 hidden md:f;ex">
+          <div className="section__content border-solid border-2 border-color-base justify-center items-center p-3 hidden md:flex">
             <div className="flex justify-center items-center">
               <FontAwesomeIcon
                 icon={faCircleDot}

@@ -28,7 +28,7 @@ export default function VideoSection() {
             <div className="section__title__headline">
               <p className="md:text-2xl text-sm color-base">Videos</p>
             </div>
-            <div className="section__title__subheadline inline md:hidden flex items-center">
+            <div className="section__title__subheadline flex items-center">
               <p className="text-sm text-right color-base">Browse all videos</p>
 
               <FontAwesomeIcon

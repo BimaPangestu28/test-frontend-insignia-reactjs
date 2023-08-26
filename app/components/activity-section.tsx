@@ -38,10 +38,10 @@ export default function ActivitySection() {
         </div>
       </div>
 
-      <div className="h-30-rem md:mt-3 border-solid md:border-t-4 md:border-b-2 py-4 grid grid-cols-1 grid-rows-1 gap-4 border-color-base">
+      <div className="h-30-rem md:mt-3 border-solid md:border-t-4 md:border-b-2 py-4 border-color-base">
         {comments.data?.map((comment) => (
           <div className="flex md:justify-between bg-base-transparent md:bg-transparent p-1 :md:p-0" key={comment.id}>
-            <div className="w-2/12 h-14 md:w-3/12 md:h-100 bg-base"></div>
+            <div className="w-2/12 h-14 md:w-3/12 md:h-16 bg-base"></div>
 
             <div className="w-9/12 pl-3">
               <p className="font-size-14 font-medium color-base">

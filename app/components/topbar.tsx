@@ -6,13 +6,25 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ModalMenu from "./modal-menu";
+import { useState } from "react";
+import ModalProfile from "./modal-profile";
 
 export default function Topbar() {
+  const [isClose, setIsClose] = useState(true);
+  const [isCloseProfile, setIsCloseProfile] = useState(true);
+
   return (
     <div>
+      <ModalMenu isClose={isClose} handleClose={() => setIsClose(true)} />
+      <ModalProfile
+        isClose={isCloseProfile}
+        handleClose={() => setIsCloseProfile(true)}
+      />
+
       <div
         id="topbar"
-        className="flex justify-between items-center hidden md:inline"
+        className="md:flex justify-between items-center hidden"
       >
         <div className="topbar__logo">
           <p className="font-size-40 color-base">
@@ -52,7 +64,10 @@ export default function Topbar() {
 
       <div className="inline md:hidden">
         <div className="flex justify-between mt-4">
-          <FontAwesomeIcon icon={faBurger} />
+          {isClose}
+          <div onClick={() => setIsClose(false)}>
+            <FontAwesomeIcon icon={faBurger} />
+          </div>
 
           <div className="logo">
             <p className="text-sm">
@@ -64,14 +79,17 @@ export default function Topbar() {
           <div>
             <FontAwesomeIcon icon={faUpload} className="mr-4" />
 
-            <FontAwesomeIcon icon={faUser} />
+            <FontAwesomeIcon
+              icon={faUser}
+              onClick={() => setIsCloseProfile(false)}
+            />
           </div>
         </div>
 
         <div className="topbar__items__search flex justify-between items-center">
-            <input type="text" placeholder="Find..." />
-            <FontAwesomeIcon icon={faSearch} className="font-size-14" />
-          </div>
+          <input type="text" placeholder="Find..." />
+          <FontAwesomeIcon icon={faSearch} className="font-size-14" />
+        </div>
       </div>
     </div>
   );

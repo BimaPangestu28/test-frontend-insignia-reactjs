@@ -12,6 +12,7 @@ import {
 import styles from "~/styles/global.css";
 import topbarStyles from "~/styles/components/topbar.css";
 import menuStyles from "~/styles/components/menu.css";
+import modalMenuStyles from "~/styles/components/modal-menu.css";
 import footerStyles from "~/styles/components/footer.css";
 import stylesheet from "~/tailwind.css";
 
@@ -22,6 +23,7 @@ export const links: LinksFunction = () => [
         { rel: "stylesheet", href: styles },
         { rel: "stylesheet", href: stylesheet },
         { rel: "stylesheet", href: topbarStyles },
+        { rel: "stylesheet", href: modalMenuStyles },
         { rel: "stylesheet", href: menuStyles },
         { rel: "stylesheet", href: footerStyles },
       ]),

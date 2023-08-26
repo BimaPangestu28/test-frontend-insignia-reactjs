@@ -47,8 +47,8 @@ export default function DocumentSection() {
               key={`document-${document.id}`}
               className={
                 index > 0
-                  ? "section__content bg-base flex justify-between items-end p-3 hidden md:inline"
-                  : "section__content bg-base flex justify-between items-end p-3 col-span-1 md:col-span-2 row-span-1 md:row-span-2 hidden md:inline"
+                  ? "section__content bg-base justify-between items-end p-3 hidden md:flex"
+                  : "section__content bg-base justify-between items-end p-3 col-span-1 md:col-span-2 row-span-1 md:row-span-2 hidden md:flex"
               }
             >
               <div>
@@ -67,7 +67,7 @@ export default function DocumentSection() {
             </div>
           ))}
 
-          <div className="section__content border-solid border-2 border-color-base flex justify-center items-center p-3 hidden md:inline">
+          <div className="section__content border-solid border-2 border-color-base justify-center items-center p-3 hidden md:flex">
             <div className="flex justify-center items-center">
               <FontAwesomeIcon
                 icon={faCirclePlus}

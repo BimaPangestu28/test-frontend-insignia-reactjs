@@ -33,7 +33,7 @@ export default function ChannelSection() {
       <div className="h-30-rem mt-0 md:mt-3 border-solid md:border-t-4 md:border-b-2 py-4 grid grid-cols-2 grid-rows-3 md:grid-rows-2 grid-rows-3 md:grid-cols-2 grid-cols-3 gap-2 md:gap-2 h-full border-color-base ">
         {channels.map((channel) => (
           <div
-            className="w-full h-14 md:h-28 bg-base p-2 flex justify-center items-center md:items-end"
+            className="w-full h-14 md:h-28 bg-base p-2 flex justify-center items-center md:justify-start md:items-end"
             key={channel}
           >
             <p className="text-xs md:text-sm text-black truncate">{channel}</p>

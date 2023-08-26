@@ -17,3 +17,9 @@
 .footer__social-medias__icon svg {
     color: black;
 }
+
+@media screen and (max-width: 768px) {
+    #footer {
+        margin-top: 50px;
+    }
+}

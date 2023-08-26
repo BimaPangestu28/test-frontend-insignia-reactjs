@@ -11,7 +11,7 @@ export default function Menu() {
 
   return (
     <div id="menu">
-      <div className="menu__links flex items-center py-4">
+      <div className="hidden md:block menu__links flex items-center py-4">
         {menus.map((menu, index) => (
           <a href="#" key={index} className="font-size-16 color-base">
             {menu}

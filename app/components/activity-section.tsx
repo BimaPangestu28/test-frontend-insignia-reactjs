@@ -1,4 +1,4 @@
-import { faComment } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faComment } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
@@ -20,21 +20,28 @@ export default function ActivitySection() {
 
   return (
     <div className="section w-full md:pl-5 sm:pl-0">
-      <div className="section__title flex items-end">
+      <div className="section__title flex items-end justify-between">
         <div className="section__title__headline">
-          <p className="font-size-24 color-base">Activity</p>
+          <p className="md:text-2xl text-sm color-base">Activity</p>
         </div>
-        <div className="section__title__subheadline w-full">
-          <p className="font-size-14 text-right color-base">
+        <div className="section__title__subheadline">
+          <p className="text-sm text-right color-base hidden md:inline font-light">
             View timeline / Filter activities
           </p>
+
+          <div className="flex inline md:hidden">
+            <p className="text-sm text-right color-base font-light">
+              View Timeline
+            </p>
+            <FontAwesomeIcon icon={faArrowRight} className="text-sm ml-1" />
+          </div>
         </div>
       </div>
 
-      <div className="h-30-rem mt-3 border-solid border-t-4 border-b-2 py-4 grid grid-cols-1 grid-rows-1 gap-4 border-color-base">
+      <div className="h-30-rem md:mt-3 border-solid md:border-t-4 md:border-b-2 py-4 grid grid-cols-1 grid-rows-1 gap-4 border-color-base">
         {comments.data?.map((comment) => (
-          <div className="flex justify-between" key={comment.id}>
-            <div className="w-3/12 h-100 bg-base"></div>
+          <div className="flex md:justify-between bg-base-transparent md:bg-transparent p-1 :md:p-0" key={comment.id}>
+            <div className="w-2/12 h-14 md:w-3/12 md:h-100 bg-base"></div>
 
             <div className="w-9/12 pl-3">
               <p className="font-size-14 font-medium color-base">

@@ -17,7 +17,7 @@ export default function Footer() {
 
   return (
     <div id="footer">
-      <div className="footer__social-medias flex align-center md:justify-start sm:text-center sm:flex sm:justify-center">
+      <div className="footer__social-medias flex align-center md:justify-start text-center flex justify-center">
         <div className="footer__social-medias__icon mr-10">
           <FontAwesomeIcon
             icon={faTwitter}
@@ -38,26 +38,26 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer__items md:block sm:flex sm:flex-column sm:items-center sm:justify-center">
-        <div className="footer__items__links flex items-center md:my-6 sm:my-3">
+      <div className="footer__items md:block flex flex-col items-center justify-center">
+        <div className="footer__items__links block text-center md:text-left md:flex items-center md:my-6 my-3 font-light">
           {menus.map((menu, index) => (
-            <a href="#" key={index} className="font-size-12 color-base">
+            <a href="#" key={index} className="font-size-12 color-base mr-2 md:mr-0">
               {menu}
-              {index !== menus.length - 1 && <span className="mx-3">/</span>}
+              {index !== menus.length - 1 && <span className="mx-3 hidden md:inline">/</span>}
             </a>
           ))}
         </div>
 
-        <div className="footer__items__copy">
+        <div className="footer__items__copy font-light">
           <p className="font-size-12 color-base">
             © Copyright 2013 companyname inc.
           </p>
         </div>
 
-        <div className="footer__items__sublinks flex items-center mt-3">
-          <a href="#" className="font-size-12 color-base">
+        <div className="footer__items__sublinks flex items-center mt-1 md:mt-3 font-light">
+          <a href="#" className="font-size-12 color-base mr-3 md:mr-0">
             Privacy
-            <span className="mx-3">/</span>
+            <span className="mx-3 hidden md:inline">/</span>
           </a>
           <a href="#" className="font-size-12 color-base">
             Terms

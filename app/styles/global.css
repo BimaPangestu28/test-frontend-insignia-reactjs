@@ -18,6 +18,10 @@ p {
   background: #f4e4cf;
 }
 
+.bg-base-transparent {
+  background: #9e4f54;
+}
+
 .color-base {
   color: #f4e4cf;
 }
@@ -124,5 +128,9 @@ p {
 @media screen and (max-width: 768px) {
   #content {
     width: 90%;
+  }
+
+  .h-33-rem, .h-30-rem {
+    height: 100%;
   }
 }

@@ -24,6 +24,18 @@
     color: black;
 }
 
+@media screen and (max-width: 768px) {
+    .topbar__items__search {
+        margin-top: 15px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .topbar__items__search input {
+        font-size: 14px;
+    }
+}   
+
 /* Style for button upload */
 .topbar__items__upload {
     display: flex;

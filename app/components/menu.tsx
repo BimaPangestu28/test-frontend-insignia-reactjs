@@ -13,9 +13,9 @@ export default function Menu() {
     <div id="menu">
       <div className="menu__links flex items-center py-4">
         {menus.map((menu, index) => (
-          <a href="#" key={index} className="font-size-16">
+          <a href="#" key={index} className="font-size-16 color-base">
             {menu}
-            {index !== menus.length - 1 && <span className="mx-3">/</span>}
+            {index !== menus.length - 1 && <span className="mx-8">/</span>}
           </a>
         ))}
       </div>

@@ -1,7 +1,8 @@
 #footer {
-    border-top: 1px solid white;
+    border-top: 1px solid #f4e4cf;
     padding-top: 20px;
-    margin-top: 30px;
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 .footer__social-medias__icon {
@@ -10,13 +11,9 @@
     align-items: center;
     width: 30px;
     height: 30px;
-    background: white;
+    background: #f4e4cf;
 }
 
 .footer__social-medias__icon svg {
     color: black;
-}
-
-.footer__items__links {
-    margin: 30px 0px;
 }

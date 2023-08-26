@@ -11,12 +11,13 @@
 /* Style for search bar */
 .topbar__items__search {
     width: 58%;
-    background: white;
+    background: #f4e4cf;
     padding: 10px;
 }
 
 .topbar__items__search input {
     border: none;
+    background: #f4e4cf;
 }
 
 .topbar__items__search svg {
@@ -39,7 +40,7 @@
 }
 
 .topbar__items__user__bullet {
-    background: white;
+    background: #f4e4cf;
     color: black;
     width: 20px;
     height: 20px;

@@ -5,7 +5,7 @@ export default function Topbar() {
   return (
     <div id="topbar" className="flex justify-between items-center">
       <div className="topbar__logo">
-        <p className="font-size-40">Social<span className="font-light">Network</span></p>
+        <p className="font-size-40 color-base">Social<span className="font-light">Network</span></p>
       </div>
 
       <div className="topbar__items flex justify-between items-center">
